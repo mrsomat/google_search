@@ -1,0 +1,145 @@
+/*? global clearing */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --color-black-primary: rgb(0, 0, 0, 0.65);
+    --color-black-secondary: rgb(0,0,0,0.15);
+    --color-icon: rgb(203,206,209,255);
+    --color-icon-2: rgba(95,99,104,255);
+    --color-search:rgba(223,225,229,255);
+    --color-font: rgba(33,33,33,255);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.header__right {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.header__right a {
+    margin-right: 16px;
+    font-weight: 400;
+    color: var(--color-black-font);
+}
+
+.header__right .apps {
+    margin-right: 16px;
+    font-weight: 400;
+    color: var(--color-icon-2);
+}
+
+.header__right a:hover {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.feature img {
+    width: 285px;
+    height: auto;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.search__input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 99px;
+    border: 1px solid var(--color-search);
+    padding: 0 16px;
+}
+
+.search__input:hover {
+    box-shadow: 5px 4px 13px 0px var(--color-black-secondary);
+    -webkit-box-shadow: 5px 4px 13px 0px var(--color-black-secondary);
+    -moz-box-shadow: 5px 4px 13px 0px var(--color-black-secondary);
+}
+
+.search__input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 4px;
+    outline: none;
+    border: none;
+}
+
+.search__input .photo {
+    cursor: pointer;
+}
+
+.search__input .search-icon {
+    color: var(--color-icon-2);
+}
+
+.search__action {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.search__action button{
+    border: 1px solid transparent;
+    padding: 7px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search__action button:hover{
+    border: 1px solid var(--color-icon);
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: var(--color-icon-2);
+    padding: 20px;
+}
+
+.language a {
+    margin-right: 6px;
+}
